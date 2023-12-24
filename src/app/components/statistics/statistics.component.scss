@@ -1,0 +1,224 @@
+.start, .middle, .end{
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.start {
+  border-radius: 0.5625rem;
+  border: 0.75px solid rgba(161, 165, 183, 0.5);
+  background: #fff;
+  .header {
+    color: #1c1c28;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Neo Sans Arabic";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.125rem; /* 150% */
+    letter-spacing: 0.01781rem;
+  }
+  .price-percentage {
+    .percent {
+      width: 1.57813rem;
+      height: 0.65506rem;
+      flex-shrink: 0;
+      background-color: #e6f9f1;
+
+      font-size: 0.29775rem;
+      font-weight: 500;
+      line-height: 1.25063rem; /* 420% */
+      letter-spacing: -0.00594rem;
+    }
+    .price {
+      color: #1c1c28;
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: "Inter", sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.125rem; /* 112.5% */
+      letter-spacing: 0.01781rem;
+    }
+  }
+  .chart{
+    // margin-top: -1rem;
+    // margin-right: auto;
+  }
+}
+.middle {
+  flex-shrink: 0;
+  border-radius: 0.5625rem;
+  background: #0771de;
+  color: #fff;
+
+  .icon {
+    width: 1.875rem;
+    height: 1.875rem;
+  }
+  .icon + span {
+    white-space: nowrap;
+
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: "Neo Sans Arabic";
+    font-size: 0.75rem;
+
+    font-weight: 400;
+    line-height: 1.125rem; /* 150% */
+  }
+  .price-percentage {
+    .percent {
+      width: 1.57813rem;
+      height: 0.65506rem;
+      flex-shrink: 0;
+      background-color: rgba(255, 255, 255, 0.2);
+
+      font-size: 0.29775rem;
+      font-weight: 500;
+      line-height: 1.25063rem; /* 420% */
+      letter-spacing: -0.00594rem;
+    }
+    .price {
+      font-feature-settings: "clig" off, "liga" off;
+      font-family: "Inter", sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.125rem; /* 112.5% */
+      letter-spacing: 0.01781rem;
+    }
+  }
+}
+.end {
+  border-radius: 0.5625rem;
+  border: 0.75px solid rgba(161, 165, 183, 0.5);
+  background: #fff;
+  .saledProducts {
+
+    h3 {
+      color: #1c1c28;
+      // font-feature-settings: "clig" off, "liga" off;
+      font-family: "Neo Sans Arabic";
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1.125rem; /* 150% */
+      letter-spacing: 0.0178rem;
+    }
+
+    .prod:nth-child(2){
+      span{
+        background: #1da8ff;
+      }
+    }
+    .prod:nth-child(3){
+      span{
+
+      background: #FABE7A;
+      }
+    }
+    .prod:nth-child(4){
+      span{
+
+      background: #7661E2;
+    }
+    }
+    .prod {
+
+      display: inline-block;
+      white-space: nowrap;
+      margin-left: .4rem;
+      span {
+        margin-left: .2rem;
+        padding: 0.3rem;
+        width: 0.8125rem;
+        height: 0.82244rem;
+        flex-shrink: 0;
+        border-radius: 0.125rem;
+        color: #fff;
+      }
+
+
+      color: #828282;
+      font-family: "Neo Sans Arabic";
+      font-size: 0.5rem;
+      font-weight: 400;
+      line-height: 1.0156rem; /* 203.125% */
+      text-transform: uppercase;
+    }
+  }
+
+  .charts {
+
+    span {
+      p {
+        top: -10px;
+        color: #3f4254;
+        text-align: center;
+        font-size: 0.34613rem;
+        font-weight: 600;
+        line-height: 0.39563rem; /* 114.286% */
+        letter-spacing: -0.00344rem;
+      }
+      display: inline-block;
+      width: 0.625rem;
+      height: 3.28963rem;
+
+      bottom: -60px;
+
+
+      border-radius: 0.09888rem 0.09888rem 0rem 0rem;
+      background: #1da8ff;
+    }
+
+
+
+    span:nth-child(1) {
+      height: 3.28963rem;
+      background: #1da8ff;
+      right: 0;
+    }
+
+
+    span:nth-child(2) {
+      height: 2.46725rem;
+      background: #FABE7A;
+      right: 1.5rem;
+    }
+
+
+    span:nth-child(3) {
+      height: 3.28963rem;
+      background: #7661E2;
+      right: 3rem;
+
+    }
+
+
+    span:nth-child(4) {
+      right: 4.5rem;
+
+      height: 0.63263rem;
+      background: #FFE5B5
+    }
+
+
+    span:nth-child(5) {
+      height: 0.88569rem;
+      background: #BEA3FF;
+      right: 6rem;
+
+    }
+
+    span:nth-child(6) {
+      height: 1.26525rem;
+      left: 0;
+      background: #FFA4A9;
+      right: 7.5rem;
+
+    }
+
+  }
+}
+
+
+
+

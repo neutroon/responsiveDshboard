@@ -1,0 +1,230 @@
+.search-filter {
+  .search {
+    input {
+      width: 19.75rem;
+      height: 1.875rem;
+      flex-shrink: 0;
+      fill: #fff;
+      stroke-width: 1px;
+      stroke: rgba(146, 161, 173, 0.4);
+      padding-right: 2rem;
+      &::placeholder {
+        color: rgba(146, 161, 173, 0.4);
+        font-family: "Neo Sans Arabic";
+        font-size: 0.625rem;
+
+        font-weight: 400;
+      }
+    }
+    .icon {
+      right: 1rem;
+    }
+  }
+  .filter {
+    background-color: white;
+    border: 0.75px solid rgba(161, 165, 183, 0.5);
+    width: 1.875rem;
+    height: 1.875rem;
+    flex-shrink: 0;
+  }
+}
+
+.tableBtns{
+  .end{
+    width: 15.4375rem;
+    height: 2.5625rem;
+    flex-shrink: 0;
+    border-radius: 0.375rem 0.375rem 0rem 0rem;
+    border: 0.75px solid #d8dce4;
+    background-color: #fff;
+
+    //font style
+    color: #898995;
+    font-family: "Neo Sans Arabic";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.3125rem; /* 175% */
+
+    span:nth-child(1) {
+      border-left: 0.0625rem solid #8989957c;
+    }
+
+    span {
+      .count {
+        width: 1.25rem;
+        height: 1rem;
+        flex-shrink: 0;
+        border-radius: 0.25rem;
+        border: 0.5px solid #edf2ef;
+        background-color: #fafafa;
+
+        // font
+        color: #898995;
+        font-family: "Neo Sans Arabic";
+        font-size: 0.47369rem;
+        font-weight: 400;
+        line-height: 1.05rem; /* 221.667% */
+      }
+    }
+  }
+  .btns{
+    top: -10px;
+  }
+}
+
+.myTable {
+
+
+
+
+      .header {
+        border: 0.5px solid rgba(112, 144, 176, 0.4);
+        th{
+          //font
+          color: #85848b !important;
+          font-family: "Neo Sans Arabic";
+          font-size: 0.6875rem;
+          font-weight: 400;
+          line-height: 1.3125rem; /* 190.909% */
+        }
+      }
+
+
+    .mobileVeiwCard {
+    transition: ease-in-out .5s all;
+    border: 0.75px solid #EBF0ED;
+
+
+
+        td {
+          color: #1c1c28;
+          font-family: "Neo Sans Arabic";
+          font-size: 0.75rem;
+          font-weight: 400;
+          line-height: 1.3125rem; /* 175% */
+
+          figure {
+            width: 1rem;
+            height: 1rem;
+            flex-shrink: 0;
+            border-radius: 0.28125rem;
+          }
+          figcaption {
+            span:nth-child(1) {
+              color: #1c1c28;
+              font-family: "Neo Sans Arabic";
+              font-size: 0.625rem;
+              font-weight: 500;
+              line-height: 1.3125rem; /* 210% */
+            }
+            span:nth-child(2) {
+              color: #83899f;
+              font-family: "Inter", sans-serif;
+              font-size: 0.5625rem;
+              font-weight: 400;
+              line-height: 1.3125rem; /* 233.333% */
+            }
+          }
+
+          .classefication {
+            padding: 0.4rem;
+            width: 5.0625rem;
+            flex-shrink: 0;
+            border-radius: 0.82031rem;
+            border: 0.75px solid #e0e3e9;
+            background: #f7f7f7;
+          }
+          .availability {
+            width: 4.4375rem;
+            flex-shrink: 0;
+            border-radius: 0.375rem;
+            background-color: rgba(39, 208, 140, 0.1);
+          }
+        }
+        .lastTd {
+          span:nth-child(1) {
+            width: 1.5rem;
+            height: 1.5rem;
+            flex-shrink: 0;
+            background-color: white;
+            border: 0.75px solid #d8dce4;
+          }
+        }
+
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+  .mobileVeiwCard{
+    max-height: 5rem;
+    overflow: hidden;
+    display: grid;
+    border-radius: 0 0 1.5rem 1.5rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    grid-template-areas:
+    "first second setting"
+    "first second setting"
+    ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+            // -------------------------------
+            td:nth-last-child(1){
+              grid-area: setting;
+            }
+            td:not(td:nth-last-child(1)){
+              height: 5rem;
+              display: grid !important;
+              grid-template-rows: 1fr 1fr;
+            }
+            td:nth-child(1){
+              grid-area: first;
+              height: 5rem;
+              display: grid !important;
+              grid-template-rows: 1fr 1fr;
+            }
+            td:nth-child(2){
+              grid-area: second;
+              text-align: center;
+              height: 5rem;
+              display: grid !important;
+              grid-template-areas:
+              "head head head"
+              "pic caption caption"
+              "pic caption caption"
+              ;
+              span{
+                grid-area: head;
+              }
+              figure{
+                grid-area: pic;
+              }
+              figcaption{
+                grid-area: caption;
+              }
+
+            }
+            // ---------------------
+  }
+}
+
+
+
+@media screen and (max-width: 465px) {
+  .btns {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,15 @@
+section{
+  width: 13.9375rem;
+  height: 46.4375rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+border: 0.75px solid #EEF1F0;
+background: #FFF;
+}
+
+
+@media screen and (max-width: 935px) {
+  section{
+    display: none;
+  }
+}

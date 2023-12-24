@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+@font-face {
+  font-family: "Neo Sans Arabic";
+  src: url("./assets/fonts/alfont_com_NeoSansArabic.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Neo Sans Arabic";
+  src: url("./assets/fonts/alfont_com_AlFont_com_Neo-Sans-W23-m-1.ttf");
+  font-weight: 500;
+}
+html,
+body {
+  font-family: "Neo Sans Arabic";
+}
+.toolTipStyle {
+  background-color: #1e1b39 !important;
+  position: absolute;
+  // top: calc(100% + 5px);
+  left: 5%;
+  white-space: nowrap;
+
+  transform: translateX(-50%);
+
+  display: inline-block;
+  width: fit-content;
+  background-color: #1e1b39;
+  color: white !important;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999999;
+  color: var(--neutral-colors-500, #e5e5ef);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 0.75rem;
+  line-height: 0.8065rem;
+}
+// .apexcharts-canvas{
+//   top: -33px;
+//   left: -20px
+// }
+// @media screen and (max-width: 991px) {
+
+// .apexcharts-canvas{
+
+//   left: -400px
+// }
+// }
+// @media screen and (max-width: 768px) {
+
+// .apexcharts-canvas{
+
+//   left: -250px
+// }
+// }
+// @media screen and (max-width: 525px) {
+
+// .apexcharts-canvas{
+
+//   left: -150px
+// }
+// }
+
+
+// @media screen and (max-width: 421px) {
+
+//   .apexcharts-canvas{
+
+//     left: -100px
+//   }
+//   }
+
+// @media screen and (max-width: 377px) {
+
+//   .apexcharts-canvas{
+
+//     left: -70px
+//   }
+//   }
